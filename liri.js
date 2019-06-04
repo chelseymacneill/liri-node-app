@@ -32,11 +32,15 @@ let spotify = new spotifyPackage(keys.spotify);
 let command = process.argv[2];
 let userInput = process.argv[3];
 
+// If the user does not put in a song have the userInput default to "The Sign by Ace of Base"
+
+
 // Switch statement to control which function gets run 
 switch (command) {
   case 'concert-this':
   // API call to Bands In Town 
   concert()
+  // Call the function that console logs the result
   break;
   case 'spotify-this-song':
   // API call to spotify 
@@ -63,7 +67,11 @@ function spotifyAPI() {
     }
     
     // Result
-    let result = "\n-----------------------------------------------------------" +
+    let result = 
+    
+    "\nMode: " + command +
+    "\nInput: " + userInput +
+    "\n-----------------------------------------------------------" +
     "\nArtists: " + JSON.stringify(data.tracks.items[0].artists[0].name) +
     "\nSong Name: " + JSON.stringify(data.tracks.items[0].name) +
     "\nAlbum: " + JSON.stringify(data.tracks.items[0].album.name) +
@@ -94,7 +102,10 @@ function movie() {
     // For testing
     //console.log(response)
     
-    let result = "\n-----------------------------------" +
+    let result =
+    "\nMode: " + command +
+    "\nInput: " + userInput +
+    "\n-----------------------------------" +
     "\nTitle: " + JSON.stringify(response.data.Title) +
     "\nYear: " + JSON.stringify(response.data.Year) +
     "\nIMDB Rating: " + JSON.stringify(response.data.imdbRating) +
@@ -154,8 +165,10 @@ function concert() {
     
     
     // Holds the response in a variable to be used for console logging and writing to a log file
-    concertResponse =
-    ( "\n" + userInput + " is playing at the following times and locations: " +
+    result =
+    "\nMode: " + command +
+    "\nInput: " + userInput +
+    "\n" + userInput + " is playing at the following times and locations: " +
     "\n" + "-------------------------------------" + "\n" +
     response.data[0].venue.name + "\n" + response.data[0].venue.city + " " + response.data[0].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
     + "\n" + "-------------------------------------" + "\n" +
@@ -165,11 +178,12 @@ function concert() {
     + "\n" + "-------------------------------------" + "\n" +
     response.data[3].venue.name + "\n" + response.data[3].venue.city + " " + response.data[3].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
     + "\n" + "-------------------------------------"
-    );
     
-    console.log(concertResponse);
     
-    fs.appendFile("log.txt", concertResponse, function(err) {
+    // Console log the result
+    console.log(result);
+    
+    fs.appendFile("log.txt", result, function(err) {
       
       // If the code experiences any errors it will log the error to the console.
       if (err) {
@@ -230,23 +244,20 @@ function other() {
     
     switch (command) {
       case "concert-this":
-        concert();
-        break;
-        
-        case "spotify-this-song":
-          spotifyAPI();
-          break;
-          
-          case "movie-this":
-            movie();
-            break;
-            
-            case "do-what-it-says":
-              other();
-              break;
-            }
-
-             
+      concert();
+      break;
+      
+      case "spotify-this-song":
+      spotifyAPI();
+      break;
+      
+      case "movie-this":
+      movie();
+      break;
+      
+    }
+    
+    
   });
 };
 

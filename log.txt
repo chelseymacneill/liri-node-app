@@ -1,159 +1,14 @@
 
------------------------------------------------------------
-Artists: "Thank You Scientist"
-Song Name: "Need More Input"
-Album: "Stranger Heads Prevail"
-Preview Link from Spotify: "https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Thank You Scientist"
-Song Name: "Need More Input"
-Album: "Stranger Heads Prevail"
-Preview Link from Spotify: "https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Thank You Scientist"
-Song Name: "Need More Input"
-Album: "Stranger Heads Prevail"
-Preview Link from Spotify: "https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Hozier"
-Song Name: "Almost (Sweet Music)"
-Album: "Wasteland, Baby!"
-Preview Link from Spotify: "https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------The Phoenix
-Cincinnati OH
-11/02/19
--------------------------------------
-0-------------------------------------
-0-------------------------------------
-0-------------------------------------Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------
--------------------------------------
-Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------
--------------------------------------
-Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------
+Mode: spotify-this-song
+Input: Tiny Dancer
 -----------------------------------------------------------
 Artists: "Elton John"
 Song Name: "Tiny Dancer"
 Album: "Madman Across The Water"
 Preview Link from Spotify: "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b"
 ---------------------------------------------------------------------
--------------------------------------
-Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------Lizzo is playing at the following times and locations: 
--------------------------------------
-Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------
+Mode: movie-this
+Input: jaws
 -----------------------------------
 Title: "Jaws"
 Year: "1975"
@@ -164,84 +19,8 @@ Language: "English"
 Plot: "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down."
 Actors: "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary"
 ---------------------------------------------------
------------------------------------
-Title: "Jaws"
-Year: "1975"
-IMDB Rating: "8.0"
-Rotton Tomatoes Rating: "87/100"
-Location: "USA"
-Language: "English"
-Plot: "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down."
-Actors: "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary"
----------------------------------------------------
------------------------------------
-Title: "Jaws"
-Year: "1975"
-IMDB Rating: "8.0"
-Rotton Tomatoes Rating: "87/100"
-Location: "USA"
-Language: "English"
-Plot: "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down."
-Actors: "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary"
----------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Pim"
-Song Name: "SELFCARE"
-Album: "Aura"
-Preview Link from Spotify: "https://open.spotify.com/artist/30AbYddXmSkDXhnW6lB0ll"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------
------------------------------------------------------------
-Artists: "Mac Miller"
-Song Name: "Self Care"
-Album: "Swimming"
-Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
----------------------------------------------------------------------
------------------------------------
-Title: "Jaws"
-Year: "1975"
-IMDB Rating: "8.0"
-Rotton Tomatoes Rating: "87/100"
-Location: "USA"
-Language: "English"
-Plot: "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down."
-Actors: "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary"
----------------------------------------------------
+Mode: concert-this
+Input: lizzo
 lizzo is playing at the following times and locations: 
 -------------------------------------
 Madison Theater
@@ -260,3 +39,51 @@ Paradiso Noord, Tolhuistuin
 Nieuw-amsterdam 
 06/19/19
 -------------------------------------
+Mode: concert-this
+Input: lizzo
+lizzo is playing at the following times and locations: 
+-------------------------------------
+Madison Theater
+Covington KY
+06/19/19
+-------------------------------------
+Arvest Bank Theatre At the Midland
+Kansas City MO
+06/19/19
+-------------------------------------
+Festivalpark Werchter
+Werchter 
+06/19/19
+-------------------------------------
+Paradiso Noord, Tolhuistuin
+Nieuw-amsterdam 
+06/19/19
+-------------------------------------
+Mode: movie-this
+Input: jaws
+-----------------------------------
+Title: "Jaws"
+Year: "1975"
+IMDB Rating: "8.0"
+Rotton Tomatoes Rating: "87/100"
+Location: "USA"
+Language: "English"
+Plot: "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down."
+Actors: "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary"
+---------------------------------------------------
+Mode: spotify-this-song
+Input: jaws
+-----------------------------------------------------------
+Artists: "Brand New"
+Song Name: "Jaws Theme Swimming"
+Album: "Deja Entendu"
+Preview Link from Spotify: "https://open.spotify.com/artist/168dgYui7ExaU612eooDF1"
+---------------------------------------------------------------------
+Mode: spotify-this-song
+Input: self care
+-----------------------------------------------------------
+Artists: "Mac Miller"
+Song Name: "Self Care"
+Album: "Swimming"
+Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
+---------------------------------------------------------------------
