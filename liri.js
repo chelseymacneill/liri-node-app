@@ -61,24 +61,35 @@ switch (command) {
 
 // Spotify API call 
 function spotifyAPI() {
-  spotify.search({ type: 'track', query: 'All the Small Things', limit:1 }, function(err, data) {
+  // Takes input from the CLI for the Spotify API call and returns 1 result
+  spotify.search({ type: 'track', query: 'input', limit:1 }, function(err, data) {
     if (err) {
       return console.log('Error occurred: ' + err);
     }
-    //console.log(data)
-    console.log(JSON.stringify("Name :" +  data.tracks.items[0].artists[0].name));
+    
+    // Result
+    let result = "\n-----------------------------------------------------------" +
+    "\nArtists: " + JSON.stringify(data.tracks.items[0].artists[0].name) +
+    "\nSong Name: " + JSON.stringify(data.tracks.items[0].name) +
+    "\nAlbum: " + JSON.stringify(data.tracks.items[0].album.name) +
+    "\nPreview Link from Spotify: " + JSON.stringify(data.tracks.items[0].artists[0].external_urls.spotify) +
+    "\n---------------------------------------------------------------------"
+    
+    // Log the result
+    console.log(result)
+    
+    // Writing the results of Spotify API Call to log.txt 
+    fs.writeFile("log.txt", result , function(err) {
+      
+      // If the code experiences any errors it will log the error to the console.
+      if (err) {
+        return console.log(err);
+      }
+      
+      // Otherwise, print
+      console.log("log updated");
+    });
   });
-  
-  // Writing the results of Spotify API Call to log.txt 
-  //   fs.writeFile("log.txt", [variable holding the response] , function(err) {
-  
-  //     // If the code experiences any errors it will log the error to the console.
-  //     if (err) {
-  //       return console.log(err);
-  //     }
-  
-  //     // Otherwise, it will print: "movies.txt was updated!"
-  //     console.log("log updated");
 };
 
 // OMDB API Call 

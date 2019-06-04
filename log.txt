@@ -1,44 +1,7 @@
-Title: "Dumbo"
-Year: "1941"
-IMDB Rating: "7.3"
-Rotton Tomatoes Rating: "96/100"
-Location: "USA"
-Language: "English"
-Plot: "Ridiculed because of his enormous ears, a young circus elephant is assisted by a mouse to achieve his full potential."
-Actors: "James Baskett, Herman Bing, Mel Blanc, Billy Bletcher"-----------------------------------Title: "Dumbo"
-Year: "1941"
-IMDB Rating: "7.3"
-Rotton Tomatoes Rating: "96/100"
-Location: "USA"
-Language: "English"
-Plot: "Ridiculed because of his enormous ears, a young circus elephant is assisted by a mouse to achieve his full potential."
-Actors: "James Baskett, Herman Bing, Mel Blanc, Billy Bletcher"--------------------------------------------------------------------------------------
-Title: "Dumbo"
-Year: "1941"
-IMDB Rating: "7.3"
-Rotton Tomatoes Rating: "96/100"
-Location: "USA"
-Language: "English"
-Plot: "Ridiculed because of his enormous ears, a young circus elephant is assisted by a mouse to achieve his full potential."
-Actors: "James Baskett, Herman Bing, Mel Blanc, Billy Bletcher"
----------------------------------------------------
------------------------------------
-Title: "Dumbo"
-Year: "1941"
-IMDB Rating: "7.3"
-Rotton Tomatoes Rating: "96/100"
-Location: "USA"
-Language: "English"
-Plot: "Ridiculed because of his enormous ears, a young circus elephant is assisted by a mouse to achieve his full potential."
-Actors: "James Baskett, Herman Bing, Mel Blanc, Billy Bletcher"
----------------------------------------------------
------------------------------------
-Title: "Dumbo"
-Year: "1941"
-IMDB Rating: "7.3"
-Rotton Tomatoes Rating: "96/100"
-Location: "USA"
-Language: "English"
-Plot: "Ridiculed because of his enormous ears, a young circus elephant is assisted by a mouse to achieve his full potential."
-Actors: "James Baskett, Herman Bing, Mel Blanc, Billy Bletcher"
----------------------------------------------------
+
+-----------------------------------------------------------
+Artists: "Thank You Scientist"
+Song Name: "Need More Input"
+Album: "Stranger Heads Prevail"
+Preview Link from Spotify: "https://open.spotify.com/artist/4YygB8sfxuIcj2p0G9kpQ5"
+---------------------------------------------------------------------
