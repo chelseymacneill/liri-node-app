@@ -47,7 +47,7 @@ switch (command) {
   movie()
   break;
   case 'do-what-it-says':
-  doWhatItSays()
+  other()
   break;
   default : 
   // 
@@ -91,8 +91,8 @@ function spotifyAPI() {
 function movie() {
   axios.get("http://www.omdbapi.com/?t=" + userInput + "&apikey=trilogy").then(
   function(response) {
-
-    console.log(response)
+    // For testing
+    //console.log(response)
     
     let result = "\n-----------------------------------" +
     "\nTitle: " + JSON.stringify(response.data.Title) +
@@ -144,68 +144,71 @@ function movie() {
 // Bands in Town API CALL 
 function concert() {
   axios.get("https://rest.bandsintown.com/artists/" + userInput + "/events?app_id=codingbootcamp").then(
-    function(response) {
-     
-      // For trouble shooting error messages
-      // console.log(response)
-      // console.log(response.data[1].venue.name)
-      // console.log(response.data[1].venue.city)
-      // console.log(response.data[1].venue.region)
-     
-
-      // Holds the response in a variable to be used for console logging and writing to a log file
-      concertResponse =
-        ( "\n" + "-------------------------------------" + "\n" +
-          response.data[0].venue.name + "\n" + response.data[0].venue.city + " " + response.data[0].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
-          + "\n" + "-------------------------------------" + "\n" +
-          response.data[1].venue.name + "\n" + response.data[1].venue.city + " " + response.data[1].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
-          + "\n" + "-------------------------------------" + "\n" +
-          response.data[2].venue.name + "\n" + response.data[2].venue.city + " " + response.data[2].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
-          + "\n" + "-------------------------------------" + "\n" +
-          response.data[3].venue.name + "\n" + response.data[3].venue.city + " " + response.data[3].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
-          + "\n" + "-------------------------------------"
-          );
- 
-      console.log( userInput + " is playing at the following times and locations: " + concertResponse);
- 
-      fs.appendFile("log.txt", concertResponse, function(err) {
- 
-        // If the code experiences any errors it will log the error to the console.
-        if (err) {
-          return console.log(err);
-        }
- 
-        // Otherwise, it will print: "movies.txt was updated!"
-        console.log("");
-      });
- 
-    })
-    .catch(function(error) {
-      if (error.response) {
-        // The request was made and the server responded with a status code
-        // that falls out of the range of 2xx
-        console.log("---------------Data---------------");
-        console.log(error.response.data);
-        console.log("---------------Status---------------");
-        console.log(error.response.status);
-        console.log("---------------Status---------------");
-        console.log(error.response.headers);
-      } else if (error.request) {
-        // The request was made but no response was received
-        // `error.request` is an object that comes back with details pertaining to the error that occurred.
-        console.log("Error Request: " + error.request);
-      } else if (error.message) {
-        // Something happened in setting up the request that triggered an Error
-        
-        console.log("Sorry this artist has no upcoming events.");
+  function(response) {
+    
+    // For trouble shooting error messages
+    // console.log(response)
+    // console.log(response.data[1].venue.name)
+    // console.log(response.data[1].venue.city)
+    // console.log(response.data[1].venue.region)
+    
+    
+    // Holds the response in a variable to be used for console logging and writing to a log file
+    concertResponse =
+    ( "\n" + userInput + " is playing at the following times and locations: " +
+    "\n" + "-------------------------------------" + "\n" +
+    response.data[0].venue.name + "\n" + response.data[0].venue.city + " " + response.data[0].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
+    + "\n" + "-------------------------------------" + "\n" +
+    response.data[1].venue.name + "\n" + response.data[1].venue.city + " " + response.data[1].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
+    + "\n" + "-------------------------------------" + "\n" +
+    response.data[2].venue.name + "\n" + response.data[2].venue.city + " " + response.data[2].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
+    + "\n" + "-------------------------------------" + "\n" +
+    response.data[3].venue.name + "\n" + response.data[3].venue.city + " " + response.data[3].venue.region + "\n" + moment(response.data[0].datetime.substring(0,10), 'YYYY MM DD').format('MM/DD/YY')
+    + "\n" + "-------------------------------------"
+    );
+    
+    console.log(concertResponse);
+    
+    fs.appendFile("log.txt", concertResponse, function(err) {
+      
+      // If the code experiences any errors it will log the error to the console.
+      if (err) {
+        return console.log(err);
       }
-      console.log(error.config);
+      
+      // Otherwise, it will print: "movies.txt was updated!"
+      console.log("");
     });
- }
+    
+  })
+  .catch(function(error) {
+    if (error.response) {
+      // The request was made and the server responded with a status code
+      // that falls out of the range of 2xx
+      console.log("---------------Data---------------");
+      console.log(error.response.data);
+      console.log("---------------Status---------------");
+      console.log(error.response.status);
+      console.log("---------------Status---------------");
+      console.log(error.response.headers);
+    } else if (error.request) {
+      // The request was made but no response was received
+      // `error.request` is an object that comes back with details pertaining to the error that occurred.
+      console.log("Error Request: " + error.request);
+    } else if (error.message) {
+      // Something happened in setting up the request that triggered an Error
+      
+      console.log("Sorry this artist has no upcoming events.");
+    }
+    console.log(error.config);
+  });
+};
 
-// Do what it says functionality
-function doWhatItSays() {
-  // This block of code will read what is in 
+function other() {
+  // Using FS with an external text file to control LIRI
+  
+  // This block of code will read what is in
+  // Core node package for reading and writing files
   fs.readFile("random.txt", "utf8", function(error, data) {
     
     // If the code experiences any errors it will log the error to the console.
@@ -214,17 +217,36 @@ function doWhatItSays() {
     }
     
     // We will then print the contents of data
-    console.log(data);
+    //console.log(data);
     
     // Then split it by commas (to make it more readable)
-    let dataArr = data.split(",");
+    var dataArr = data.split(",");
     
-    
-    command = dataArr[0];
-    input = dataArr[1];
-    
+    console.log(dataArr[0]);
+    console.log(dataArr[1])
     // We will then re-display the content as an array for later use.
-    console.log(dataArr);
+    command = dataArr[0];
+    userInput = dataArr[1];
     
+    switch (command) {
+      case "concert-this":
+        concert();
+        break;
+        
+        case "spotify-this-song":
+          spotifyAPI();
+          break;
+          
+          case "movie-this":
+            movie();
+            break;
+            
+            case "do-what-it-says":
+              other();
+              break;
+            }
+
+             
   });
 };
+
