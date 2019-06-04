@@ -6,45 +6,38 @@
 // DotEnv: (https://www.npmjs.com/package/dotenv)
 // FS : 
 
-
-// NO Install needed 
+// No Install needed:
 // OMDB API : (http://www.omdbapi.com)
 // Bands In Town API : (http://www.artists.bandsintown.com/bandsintown-api)
 
 // Axios 
 let axios = require("axios")
+// Core node package for reading and writing files
+let fs = require("fs");
 
 
 // Spotify API Set up ===============================
-
-// read and set any environment variables with the dotenv package
+// Read and set any environment variables with the dotenv package
 require("dotenv").config();
 
 //import the `keys.js` file and store it in a variable.
 let keys = require("./keys.js");
 
-// Access the spotify keys from the keys.js file
-let keysOfSpotify = keys.spotify
+var Spotify = require('node-spotify-api');
 
-//console.log("Why won't you run" + keysOfSpotify)
+// Retrieve data via Axios from Spotify
+let spotify = new Spotify(keys.spotify);
+
 //console.log(JSON.stringify(keysOfSpotify))
 //console.log(keysOfSpotify.id)
 //console.log(keysOfSpotify.secret)
 // ===================================================
 
-
-
-// Retrieve data via Axios from Bands in Town
-
-// Retrieve data via Axios from OMDB
-
-
-
-// Switch statement to control which function gets run 
+// Gathering input from the CLI 
 let command = process.argv[2];
-// 
 let userInput = process.argv[3];
 
+// Switch statement to control which function gets run 
 switch (command) {
   case 'concert-this':
   // API call to Bands In Town 
@@ -52,66 +45,71 @@ switch (command) {
   break;
   case 'spotify-this-song':
   // API call to spotify 
-  spotifyapi()
+  spotifyAPI()
   break;
   case 'movie-this':
   // API call to OMBD 
   movie()
   break;
   case 'do-what-it-says':
-  // 
+  doWhatItSays()
   break;
   default : 
   // 
   console.log("Default of the switch statement")
 }
 
-// Retrieve data via Axios from Spotify 
-let Spotify = require('node-spotify-api');
-
-let spotify = new Spotify({
-  id: '86e3d346227645a3bedc489eaeec29ee',
-  secret: 'e90dae2b5fe143b6950baeb5aa2d19bf'
-});
-
 // Spotify API call 
-function spotifyapi() {
+function spotifyAPI() {
   spotify.search({ type: 'track', query: 'All the Small Things', limit:1 }, function(err, data) {
     if (err) {
       return console.log('Error occurred: ' + err);
     }
-    
     //console.log(data)
     console.log(JSON.stringify("Name :" +  data.tracks.items[0].artists[0].name));
   });
-
-  // Writing the results of Spotify API Call to log.txt 
-//   fs.writeFile("log.txt", [variable holding the response] , function(err) {
-
-//     // If the code experiences any errors it will log the error to the console.
-//     if (err) {
-//       return console.log(err);
-//     }
   
-//     // Otherwise, it will print: "movies.txt was updated!"
-//     console.log("log updated");
- };
+  // Writing the results of Spotify API Call to log.txt 
+  //   fs.writeFile("log.txt", [variable holding the response] , function(err) {
+  
+  //     // If the code experiences any errors it will log the error to the console.
+  //     if (err) {
+  //       return console.log(err);
+  //     }
+  
+  //     // Otherwise, it will print: "movies.txt was updated!"
+  //     console.log("log updated");
+};
 
 // OMDB API Call 
 function movie() {
   axios.get("http://www.omdbapi.com/?t=" + userInput + "&apikey=trilogy").then(
   function(response) {
-    console.log("Title: " + JSON.stringify(response.data.Title) + "/n" +
-                 "Title: " + JSON.stringify(response.data.Title))
-    console.log("Year: " + JSON.stringify(response.data.Year));
-    console.log("IMDB Rating: " + JSON.stringify(response.data.imdbRating));
-    console.log("Rotton Tomatoes Rating: " + JSON.stringify(response.data.Ratings[2].Value));
-    console.log("Location: " + JSON.stringify(response.data.Country));
-    console.log("Location: " + JSON.stringify(response.data.Language));
-    console.log("Plot: " + JSON.stringify(response.data.Plot));
-    console.log("Actors: " + JSON.stringify(response.data.Actors));
-
     
+    let result = "\n-----------------------------------" +
+    "\nTitle: " + JSON.stringify(response.data.Title) +
+    "\nYear: " + JSON.stringify(response.data.Year) +
+    "\nIMDB Rating: " + JSON.stringify(response.data.imdbRating) +
+    "\nRotton Tomatoes Rating: " + JSON.stringify(response.data.Ratings[2].Value) +
+    "\nLocation: " + JSON.stringify(response.data.Country) +
+    "\nLanguage: " + JSON.stringify(response.data.Language) +
+    "\nPlot: " + JSON.stringify(response.data.Plot) +
+    "\nActors: " + JSON.stringify(response.data.Actors) +
+    "\n---------------------------------------------------"
+    
+    // console logging 
+    console.log(result)
+    
+    // Write the response to the log.txt file
+    fs.appendFile("log.txt", result, function(err) {
+      
+      // If the code experiences any errors it will log the error to the console.
+      if (err) {
+        return console.log(err);
+      }
+      // Otherwise, it will print: "movies.txt was updated!"
+      console.log("updated");
+    });
   })
   .catch(function(error) {
     if (error.response) {
@@ -181,31 +179,28 @@ function concert() {
   });
 };
 
-// Using FS with an external text file to control LIRI
-// Core node package for reading and writing files
-let fs = require("fs");
-
-// This block of code will read what is in 
-
-fs.readFile("random.txt", "utf8", function(error, data) {
-
-  // If the code experiences any errors it will log the error to the console.
-  if (error) {
-    return console.log(error);
-  }
-
-  // We will then print the contents of data
-  console.log(data);
-
-  // Then split it by commas (to make it more readable)
-  let dataArr = data.split(",");
-
-
-  command = dataArr[0];
-  input = dataArr[1];
-
-
-
-  // We will then re-display the content as an array for later use.
-  console.log(dataArr);
-});
+// Do what it says functionality
+function doWhatItSays() {
+  // This block of code will read what is in 
+  fs.readFile("random.txt", "utf8", function(error, data) {
+    
+    // If the code experiences any errors it will log the error to the console.
+    if (error) {
+      return console.log(error);
+    }
+    
+    // We will then print the contents of data
+    console.log(data);
+    
+    // Then split it by commas (to make it more readable)
+    let dataArr = data.split(",");
+    
+    
+    command = dataArr[0];
+    input = dataArr[1];
+    
+    // We will then re-display the content as an array for later use.
+    console.log(dataArr);
+    
+  });
+};
