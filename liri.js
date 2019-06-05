@@ -165,7 +165,7 @@ function concert() {
     
     
     // Holds the response in a variable to be used for console logging and writing to a log file
-    result =
+    result = 
     "\nMode: " + command +
     "\nInput: " + userInput +
     "\n" + userInput + " is playing at the following times and locations: " +

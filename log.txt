@@ -1,14 +1,14 @@
 
 Mode: spotify-this-song
-Input: Tiny Dancer
+Input: self
 -----------------------------------------------------------
-Artists: "Elton John"
-Song Name: "Tiny Dancer"
-Album: "Madman Across The Water"
-Preview Link from Spotify: "https://open.spotify.com/artist/3PhoLpVuITZKcymswpck5b"
+Artists: "Mac Miller"
+Song Name: "Self Care"
+Album: "Swimming"
+Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
 ---------------------------------------------------------------------
 Mode: movie-this
-Input: jaws
+Input: Jaws
 -----------------------------------
 Title: "Jaws"
 Year: "1975"
@@ -20,8 +20,8 @@ Plot: "When a killer shark unleashes chaos on a beach community, it's up to a lo
 Actors: "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary"
 ---------------------------------------------------
 Mode: concert-this
-Input: lizzo
-lizzo is playing at the following times and locations: 
+Input: Lizzo
+Lizzo is playing at the following times and locations: 
 -------------------------------------
 Madison Theater
 Covington KY
@@ -39,46 +39,6 @@ Paradiso Noord, Tolhuistuin
 Nieuw-amsterdam 
 06/19/19
 -------------------------------------
-Mode: concert-this
-Input: lizzo
-lizzo is playing at the following times and locations: 
--------------------------------------
-Madison Theater
-Covington KY
-06/19/19
--------------------------------------
-Arvest Bank Theatre At the Midland
-Kansas City MO
-06/19/19
--------------------------------------
-Festivalpark Werchter
-Werchter 
-06/19/19
--------------------------------------
-Paradiso Noord, Tolhuistuin
-Nieuw-amsterdam 
-06/19/19
--------------------------------------
-Mode: movie-this
-Input: jaws
------------------------------------
-Title: "Jaws"
-Year: "1975"
-IMDB Rating: "8.0"
-Rotton Tomatoes Rating: "87/100"
-Location: "USA"
-Language: "English"
-Plot: "When a killer shark unleashes chaos on a beach community, it's up to a local sheriff, a marine biologist, and an old seafarer to hunt the beast down."
-Actors: "Roy Scheider, Robert Shaw, Richard Dreyfuss, Lorraine Gary"
----------------------------------------------------
-Mode: spotify-this-song
-Input: jaws
------------------------------------------------------------
-Artists: "Brand New"
-Song Name: "Jaws Theme Swimming"
-Album: "Deja Entendu"
-Preview Link from Spotify: "https://open.spotify.com/artist/168dgYui7ExaU612eooDF1"
----------------------------------------------------------------------
 Mode: spotify-this-song
 Input: self care
 -----------------------------------------------------------
@@ -87,3 +47,35 @@ Song Name: "Self Care"
 Album: "Swimming"
 Preview Link from Spotify: "https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U"
 ---------------------------------------------------------------------
+Mode: movie-this
+Input: parenthood
+-----------------------------------
+Title: "Parenthood"
+Year: "1989"
+IMDB Rating: "7.0"
+Rotton Tomatoes Rating: "82/100"
+Location: "USA"
+Language: "English"
+Plot: "The Buckmans are a midwestern family all dealing with their lives: estranged relatives, raising children, pressures of the job, and learning to be a good parent and spouse."
+Actors: "Steve Martin, Mary Steenburgen, Dianne Wiest, Jason Robards"
+---------------------------------------------------
+Mode: concert-this
+Input: Tim McGraw
+Tim McGraw is playing at the following times and locations: 
+-------------------------------------
+Nissan Stadium
+Nashville TN
+06/08/19
+-------------------------------------
+Songs Of America Book Tour
+New York NY
+06/08/19
+-------------------------------------
+Songs Of America Book Tour
+Charleston SC
+06/08/19
+-------------------------------------
+Songs Of America Book Tour
+Washington DC
+06/08/19
+-------------------------------------
